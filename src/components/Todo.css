@@ -1,0 +1,176 @@
+/* TodoApp.css */
+
+body {
+  background-color: #1e1e2f;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.todo-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  background-color: #3a3a4f;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  color: #f1f1f1;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cfcfe4;
+  margin-bottom: 1.5rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.input {
+  flex: 1 1 45%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ff00cc;
+  border-radius: 8px;
+  background-color: #2b2b3d;
+  color: #fff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ff00cc;
+  box-shadow: 0 0 4px #ff00cc;
+}
+
+.add-btn {
+  background-color: #ff00cc;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  font-size: 1.25rem;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #d900b6;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.filter-btn,
+.delete-all-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter-btn {
+  background-color: #0f0f1a;
+  color: #fff;
+}
+
+.delete-all-btn {
+  background-color: #ff00cc;
+  color: white;
+}
+
+.delete-all-btn:hover {
+  background-color: #d900b6;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2b2b3d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: #e2e2e2;
+}
+
+.todo-table thead {
+  background-color: #1e1e2f;
+}
+
+.todo-table tbody tr {
+  border-top: 1px solid #444;
+}
+
+.todo-table tbody tr:hover {
+  background-color: #3e3e55;
+}
+
+.text-center {
+  text-align: center;
+  padding: 1rem;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #8f8f9f;
+}
+
+.status {
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #ffc107;
+  color: #1e1e2f;
+}
+
+.status.complete {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.edit-btn:hover {
+  color: #ffc107;
+}
+
+.delete-btn:hover {
+  color: #ff4d4f;
+}
+.complete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: #0f0;
+}
+
+.complete-btn.completed {
+  color: #ffcc00;
+}
